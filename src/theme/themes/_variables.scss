@@ -1,0 +1,81 @@
+// Body
+$body-bg: $white;
+$body-color: $gray-01;
+
+// General
+$height-navbar: 64px;
+$border-radius: 4px;
+$transition: 0.3s ease-in-out;
+
+// Link
+$link-color: $primary;
+$link-hover-color: darken($primary, 10%);
+
+// Fonts
+$line-height-base: 1;
+
+$font-family-sans-serif: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
+
+$font-size: 16px;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-base: $font-weight-normal;
+
+// Shadows
+$shadow: 0 2px 5px 0 rgba($black, 0.2);
+
+// Gradients
+$gradient: linear-gradient(274deg, $secondary, $primary);
+
+// Texts and Heads
+$paragraph-margin-bottom: 0;
+
+$headings-font-family: $font-family-sans-serif;
+$headings-font-weight: $font-weight-bold;
+$headings-margin-bottom: 1rem;
+
+// Forms
+$form-color: $gray-01;
+$form-placeholder-color: $gray-medium;
+$form-height: 30px;
+$form-font-weight: $font-weight-base;
+$form-font-size: 14px;
+$form-border: 1px solid $gray-medium;
+$form-border-color-active: $gray-01;
+
+// Navbar
+$navbar-height: 85px;
+$navbar-bg: $white;
+$navbar-color: $black;
+$navbar-after: $primary;
+
+// Tabs
+$tabs-color: $gray-medium;
+$tabs-color-active: $primary;
+$tabs-after: $primary;
+$tabs-after-active: $primary;
+
+// Table
+$table-thead-color: $gray-01;
+$table-thead-background: $gray-05;
+$table-thead-border: 1px solid $gray-05;
+$table-tr-border: 1px solid $gray-light;
+$table-tr-striped-odd: $white;
+$table-tr-striped-even: $gray-light;
+
+// Modal
+$modal-background: $white;
+$modal-backdrop: rgba($black, 0.5);
+
+// Notification
+$notification-color: $white;
+$notification-background: $gray-01;
+
+// Card
+$card-background: $white;
+
+// Z-index
+$zindex-navbar: 1000;
