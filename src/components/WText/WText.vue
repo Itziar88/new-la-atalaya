@@ -27,10 +27,10 @@ export default {
                 'black',
                 'yellow',
                 'red',
-                'gray01',
-                'gray02',
-                'gray03',
-                'gray04',
+                'grey01',
+                'grey02',
+                'grey03',
+                'grey04',
                 '',
             ],
         ).optional,
@@ -80,11 +80,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import 'src/theme/themes/theme.scss';
+@import '@/theme/theme.scss';
 
 .WText {
     &.p {
-        color: $gray-01;
+        color: $grey-01;
         font-family: $font-family-sans-serif;
         font-size: $font-size;
         font-weight: $font-weight-normal;
@@ -92,7 +92,7 @@ export default {
     }
 
     &.span {
-        color: $gray-01;
+        color: $grey-01;
         font-family: $font-family-sans-serif;
         font-size: $font-size;
         font-weight: $font-weight-normal;
@@ -164,17 +164,17 @@ export default {
     &.black {
         color: $black;
     }
-    &.gray01 {
-        color: $gray-01;
+    &.grey01 {
+        color: $grey-01;
     }
-    &.gray02 {
-        color: $gray-02;
+    &.grey02 {
+        color: $grey-02;
     }
-	&.gray03 {
-        color: $gray-03;
+	&.grey03 {
+        color: $grey-03;
 	}
-	&.gray04 {
-        color: $gray-04;
+	&.grey04 {
+        color: $grey-04;
 	}
 
 	// Weight
