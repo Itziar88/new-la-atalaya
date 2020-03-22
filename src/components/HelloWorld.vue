@@ -1,18 +1,18 @@
 <template>
-  <div class="hello">
-  <WText typo="h1">Texto</WText>
-  </div>
+	<div class="hello">
+		<WText typo="h1">Texto</WText>
+		<WButton>Texto</WButton>
+	</div>
 </template>
 
 <script>
-import { WText } from '@/components'
+import { WText, WButton } from '@/components'
 
 export default {
-  name: "HelloWorld",
-  components: {
-    WText,
-  }
-
-};
+	name: 'HelloWorld',
+	components: {
+		WText,
+		WButton
+	}
+}
 </script>
-
