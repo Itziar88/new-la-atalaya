@@ -1,6 +1,8 @@
+@import './colors';
+
 // Body
 $body-bg: $white;
-$body-color: $gray-01;
+$body-color: $grey-01;
 
 // General
 $height-navbar: 64px;
@@ -38,13 +40,13 @@ $headings-font-weight: $font-weight-bold;
 $headings-margin-bottom: 1rem;
 
 // Forms
-$form-color: $gray-01;
-$form-placeholder-color: $gray-medium;
+$form-color: $grey-01;
+$form-placeholder-color: $grey-medium;
 $form-height: 30px;
 $form-font-weight: $font-weight-base;
 $form-font-size: 14px;
-$form-border: 1px solid $gray-medium;
-$form-border-color-active: $gray-01;
+$form-border: 1px solid $grey-medium;
+$form-border-color-active: $grey-01;
 
 // Navbar
 $navbar-height: 85px;
@@ -53,18 +55,18 @@ $navbar-color: $black;
 $navbar-after: $primary;
 
 // Tabs
-$tabs-color: $gray-medium;
+$tabs-color: $grey-medium;
 $tabs-color-active: $primary;
 $tabs-after: $primary;
 $tabs-after-active: $primary;
 
 // Table
-$table-thead-color: $gray-01;
-$table-thead-background: $gray-05;
-$table-thead-border: 1px solid $gray-05;
-$table-tr-border: 1px solid $gray-light;
+$table-thead-color: $grey-01;
+$table-thead-background: $grey-05;
+$table-thead-border: 1px solid $grey-05;
+$table-tr-border: 1px solid $grey-light;
 $table-tr-striped-odd: $white;
-$table-tr-striped-even: $gray-light;
+$table-tr-striped-even: $grey-light;
 
 // Modal
 $modal-background: $white;
@@ -72,7 +74,7 @@ $modal-backdrop: rgba($black, 0.5);
 
 // Notification
 $notification-color: $white;
-$notification-background: $gray-01;
+$notification-background: $grey-01;
 
 // Card
 $card-background: $white;
