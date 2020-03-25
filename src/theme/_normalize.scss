@@ -8,12 +8,12 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
- html {
-    line-height: 1.15; /* 1 */
-    -webkit-text-size-adjust: 100%; /* 2 */
-    -ms-text-size-adjust: 100%; // 4
-    -ms-overflow-style: scrollbar; // 5
-    -webkit-tap-highlight-color: rgba($black, 0); // 6
+html {
+	line-height: 1.15; /* 1 */
+	-webkit-text-size-adjust: 100%; /* 2 */
+	-ms-text-size-adjust: 100%; // 4
+	-ms-overflow-style: scrollbar; // 5
+	-webkit-tap-highlight-color: rgba($black, 0); // 6
 }
 
 /* Sections
@@ -24,20 +24,20 @@
    */
 
 body {
-    margin: 0;
-    padding: 0;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-feature-settings: 'liga';
-    background: $body-bg;
-    color: $body-color;
-    font-feature-settings: 'liga';
-    font-family: $font-family-sans-serif;
-    font-size: $font-size;
-    font-weight: $font-weight-base;
-    line-height: $line-height-base;
-    text-align: left;
+	margin: 0;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-feature-settings: 'liga';
+	background: $body-bg;
+	color: $body-color;
+	font-feature-settings: 'liga';
+	font-family: $font-family-sans-serif;
+	font-size: $font-size;
+	font-weight: $font-weight-base;
+	line-height: $line-height-base;
+	text-align: left;
 }
 
 // Suppress the focus outline on elements that cannot be accessed via keyboard.
@@ -46,7 +46,7 @@ body {
 //
 // Credit: https://github.com/suitcss/base
 [tabindex='-1']:focus {
-    outline: 0 !important;
+	outline: 0 !important;
 }
 
 /**
@@ -54,7 +54,7 @@ body {
    */
 
 main {
-    display: block;
+	display: block;
 }
 
 /**
@@ -63,8 +63,8 @@ main {
    */
 
 h1 {
-    font-size: 2rem;
-    margin: 0.67rem 0;
+	font-size: 2rem;
+	margin: 0.67rem 0;
 }
 
 h1,
@@ -73,17 +73,17 @@ h3,
 h4,
 h5,
 h6 {
-    margin-top: 0;
-    margin-bottom: $headings-margin-bottom;
-    color: $body-color;
-    font-family: $headings-font-family;
-    font-weight: $headings-font-weight;
+	margin-top: 0;
+	margin-bottom: $headings-margin-bottom;
+	color: $body-color;
+	font-family: $headings-font-family;
+	font-weight: $headings-font-weight;
 }
 
 p {
-    margin-top: 0;
-    margin-bottom: $paragraph-margin-bottom;
-    color: $body-color;
+	margin-top: 0;
+	margin-bottom: $paragraph-margin-bottom;
+	color: $body-color;
 }
 
 /* Grouping content
@@ -95,9 +95,9 @@ p {
    */
 
 hr {
-    box-sizing: content-box; /* 1 */
-    height: 0; /* 1 */
-    overflow: visible; /* 2 */
+	box-sizing: content-box; /* 1 */
+	height: 0; /* 1 */
+	overflow: visible; /* 2 */
 }
 
 /* Text-level semantics
@@ -108,17 +108,17 @@ hr {
    */
 
 a {
-    color: $link-color;
-    text-decoration: none;
-    background-color: transparent; // Remove the gray background on active links in IE 10.
-    -webkit-text-decoration-skip: objects; // Remove gaps in links underline in iOS 8+ and Safari 8+.
-    &:hover,
-    &:focus,
-    &:active {
-        color: $link-hover-color;
-        cursor: pointer;
-        text-decoration: none;
-    }
+	color: $link-color;
+	text-decoration: none;
+	background-color: transparent; // Remove the gray background on active links in IE 10.
+	-webkit-text-decoration-skip: objects; // Remove gaps in links underline in iOS 8+ and Safari 8+.
+	&:hover,
+	&:focus,
+	&:active {
+		color: $link-hover-color;
+		cursor: pointer;
+		text-decoration: none;
+	}
 }
 
 /**
@@ -128,49 +128,49 @@ a {
 
 abbr[title],
 abbr[data-original-title] {
-    // 4
-    text-decoration: underline; // 2
-    text-decoration: underline dotted; // 2
-    cursor: help; // 3
-    border-bottom: 0; // 1
+	// 4
+	text-decoration: underline; // 2
+	text-decoration: underline dotted; // 2
+	cursor: help; // 3
+	border-bottom: 0; // 1
 }
 
 address {
-    margin-bottom: 1rem;
-    font-style: normal;
-    line-height: inherit;
+	margin-bottom: 1rem;
+	font-style: normal;
+	line-height: inherit;
 }
 
 ol,
 ul,
 dl {
-    margin-top: 0;
-    margin-bottom: 1rem;
+	margin-top: 0;
+	margin-bottom: 1rem;
 }
 
 ol ol,
 ul ul,
 ol ul,
 ul ol {
-    margin-bottom: 0;
-    list-style: none;
+	margin-bottom: 0;
+	list-style: none;
 }
 
 dt {
-    font-weight: 700;
+	font-weight: 700;
 }
 
 dd {
-    margin-bottom: 0.5rem;
-    margin-left: 0; // Undo browser default
+	margin-bottom: 0.5rem;
+	margin-left: 0; // Undo browser default
 }
 
 blockquote {
-    margin: 0 0 1rem;
+	margin: 0 0 1rem;
 }
 
 dfn {
-    font-style: italic; // Add the correct font style in Android 4.3-
+	font-style: italic; // Add the correct font style in Android 4.3-
 }
 /**
    * Add the correct font weight in Chrome, Edge, and Safari.
@@ -178,7 +178,7 @@ dfn {
 
 b,
 strong {
-    font-weight: bolder;
+	font-weight: bolder;
 }
 
 /**
@@ -189,21 +189,21 @@ strong {
 code,
 kbd,
 samp {
-    font-family: monospace; /* 1 */
-    font-size: 1em; /* 2 */
+	font-family: monospace; /* 1 */
+	font-size: 1em; /* 2 */
 }
 pre {
-    font-family: monospace; /* 1 */
-    font-size: 1rem; /* 2 */
-    // Remove browser default top margin
-    margin-top: 0;
-    // Reset browser default of `1em` to use `rem`s
-    margin-bottom: 1rem;
-    // Don't allow content to break outside
-    overflow: auto;
-    // We have @viewport set which causes scrollbars to overlap content in IE11 and Edge, so
-    // we force a non-overlapping, non-auto-hiding scrollbar to counteract.
-    -ms-overflow-style: scrollbar;
+	font-family: monospace; /* 1 */
+	font-size: 1rem; /* 2 */
+	// Remove browser default top margin
+	margin-top: 0;
+	// Reset browser default of `1em` to use `rem`s
+	margin-bottom: 1rem;
+	// Don't allow content to break outside
+	overflow: auto;
+	// We have @viewport set which causes scrollbars to overlap content in IE11 and Edge, so
+	// we force a non-overlapping, non-auto-hiding scrollbar to counteract.
+	-ms-overflow-style: scrollbar;
 }
 
 /**
@@ -211,7 +211,7 @@ pre {
    */
 
 small {
-    font-size: 80%;
+	font-size: 80%;
 }
 
 /**
@@ -221,26 +221,26 @@ small {
 
 sub,
 sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
 }
 
 sub {
-    bottom: -0.25em;
+	bottom: -0.25em;
 }
 
 sup {
-    top: -0.5em;
+	top: -0.5em;
 }
 //
 // Figures
 //
 
 figure {
-    // Apply a consistent margin strategy (matches our type styles).
-    margin: 0 0 1rem;
+	// Apply a consistent margin strategy (matches our type styles).
+	margin: 0 0 1rem;
 }
 
 /* Embedded content
@@ -251,14 +251,14 @@ figure {
    */
 
 img {
-    border-style: none;
+	border-style: none;
 }
 
 svg {
-    // Workaround for the SVG overflow bug in IE10/11 is still required.
-    // See https://github.com/twbs/bootstrap/issues/26878
-    overflow: hidden;
-    vertical-align: middle;
+	// Workaround for the SVG overflow bug in IE10/11 is still required.
+	// See https://github.com/twbs/bootstrap/issues/26878
+	overflow: hidden;
+	vertical-align: middle;
 }
 
 //
@@ -266,21 +266,21 @@ svg {
 //
 
 table {
-    border-collapse: collapse; // Prevent double borders
+	border-collapse: collapse; // Prevent double borders
 }
 
 caption {
-    padding-top: .75rem;
-    padding-bottom: .75rem;
-    color: #6c757d;
-    text-align: left;
-    caption-side: bottom;
+	padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
+	color: #6c757d;
+	text-align: left;
+	caption-side: bottom;
 }
 
 th {
-    // Matches default `<td>` alignment by inheriting from the `<body>`, or the
-    // closest parent with a set `text-align`.
-    text-align: inherit;
+	// Matches default `<td>` alignment by inheriting from the `<body>`, or the
+	// closest parent with a set `text-align`.
+	text-align: inherit;
 }
 
 /* Forms
@@ -290,7 +290,7 @@ th {
 //
 // Details at https://github.com/twbs/bootstrap/issues/24093
 button {
-    border-radius: 0;
+	border-radius: 0;
 }
 
 // Work around a Firefox/IE bug where the transparent `button` background
@@ -307,10 +307,10 @@ input,
 optgroup,
 select,
 textarea {
-    font-family: inherit; /* 1 */
-    font-size: 100%; /* 1 */
-    line-height: 1.15; /* 1 */
-    margin: 0; /* 2 */
+	font-family: inherit; /* 1 */
+	font-size: 100%; /* 1 */
+	line-height: 1.15; /* 1 */
+	margin: 0; /* 2 */
 }
 
 /**
@@ -320,8 +320,8 @@ textarea {
 
 button,
 input {
-    /* 1 */
-    overflow: visible;
+	/* 1 */
+	overflow: visible;
 }
 
 /**
@@ -331,8 +331,8 @@ input {
 
 button,
 select {
-    /* 1 */
-    text-transform: none;
+	/* 1 */
+	text-transform: none;
 }
 
 /**
@@ -343,7 +343,7 @@ button,
 [type='button'],
 [type='reset'],
 [type='submit'] {
-    -webkit-appearance: button;
+	-webkit-appearance: button;
 }
 
 /**
@@ -354,8 +354,8 @@ button::-moz-focus-inner,
 [type='button']::-moz-focus-inner,
 [type='reset']::-moz-focus-inner,
 [type='submit']::-moz-focus-inner {
-    border-style: none;
-    padding: 0;
+	border-style: none;
+	padding: 0;
 }
 
 /**
@@ -366,31 +366,30 @@ button:-moz-focusring,
 [type='button']:-moz-focusring,
 [type='reset']:-moz-focusring,
 [type='submit']:-moz-focusring {
-    outline: 1px dotted ButtonText;
+	outline: 1px dotted ButtonText;
 }
 
 button:focus {
-    outline: 1px dotted;
-    outline: 5px auto -webkit-focus-ring-color;
+	outline: 1px dotted;
+	outline: 5px auto -webkit-focus-ring-color;
 }
-
 
 input[type='radio'],
 input[type='checkbox'] {
-    box-sizing: border-box; // 1. Add the correct box sizing in IE 10-
-    padding: 0; // 2. Remove the padding in IE 10-
+	box-sizing: border-box; // 1. Add the correct box sizing in IE 10-
+	padding: 0; // 2. Remove the padding in IE 10-
 }
 
 input[type='date'],
 input[type='time'],
 input[type='datetime-local'],
 input[type='month'] {
-    // Remove the default appearance of temporal inputs to avoid a Mobile Safari
-    // bug where setting a custom line-height prevents text from being vertically
-    // centered within the input.
-    // See https://bugs.webkit.org/show_bug.cgi?id=139848
-    // and https://github.com/twbs/bootstrap/issues/11266
-    -webkit-appearance: listbox;
+	// Remove the default appearance of temporal inputs to avoid a Mobile Safari
+	// bug where setting a custom line-height prevents text from being vertically
+	// centered within the input.
+	// See https://bugs.webkit.org/show_bug.cgi?id=139848
+	// and https://github.com/twbs/bootstrap/issues/11266
+	-webkit-appearance: listbox;
 }
 
 /**
@@ -398,16 +397,16 @@ input[type='month'] {
    */
 
 fieldset {
-    // Browsers set a default `min-width: min-content;` on fieldsets,
-    // unlike e.g. `<div>`s, which have `min-width: 0;` by default.
-    // So we reset that to ensure fieldsets behave more like a standard block element.
-    // See https://github.com/twbs/bootstrap/issues/12359
-    // and https://html.spec.whatwg.org/multipage/#the-fieldset-and-legend-elements
-    min-width: 0;
-    // Reset the default outline behavior of fieldsets so they don't affect page layout.
-    padding: 0;
-    margin: 0;
-    border: 0;
+	// Browsers set a default `min-width: min-content;` on fieldsets,
+	// unlike e.g. `<div>`s, which have `min-width: 0;` by default.
+	// So we reset that to ensure fieldsets behave more like a standard block element.
+	// See https://github.com/twbs/bootstrap/issues/12359
+	// and https://html.spec.whatwg.org/multipage/#the-fieldset-and-legend-elements
+	min-width: 0;
+	// Reset the default outline behavior of fieldsets so they don't affect page layout.
+	padding: 0;
+	margin: 0;
+	border: 0;
 }
 
 /**
@@ -418,12 +417,12 @@ fieldset {
    */
 
 legend {
-    box-sizing: border-box; /* 1 */
-    color: inherit; /* 2 */
-    display: table; /* 1 */
-    max-width: 100%; /* 1 */
-    padding: 0; /* 3 */
-    white-space: normal; /* 1 */
+	box-sizing: border-box; /* 1 */
+	color: inherit; /* 2 */
+	display: table; /* 1 */
+	max-width: 100%; /* 1 */
+	padding: 0; /* 3 */
+	white-space: normal; /* 1 */
 }
 
 /**
@@ -431,7 +430,7 @@ legend {
    */
 
 progress {
-    vertical-align: baseline;
+	vertical-align: baseline;
 }
 
 /**
@@ -439,9 +438,9 @@ progress {
    */
 
 textarea {
-    overflow: auto;
-    // Textareas should really only resize vertically so they don't break their (horizontal) containers.
-    resize: vertical;
+	overflow: auto;
+	// Textareas should really only resize vertically so they don't break their (horizontal) containers.
+	resize: vertical;
 }
 
 /**
@@ -451,8 +450,8 @@ textarea {
 
 [type='checkbox'],
 [type='radio'] {
-    box-sizing: border-box; /* 1 */
-    padding: 0; /* 2 */
+	box-sizing: border-box; /* 1 */
+	padding: 0; /* 2 */
 }
 
 /**
@@ -461,7 +460,7 @@ textarea {
 
 [type='number']::-webkit-inner-spin-button,
 [type='number']::-webkit-outer-spin-button {
-    height: auto;
+	height: auto;
 }
 
 /**
@@ -470,8 +469,8 @@ textarea {
    */
 
 [type='search'] {
-    -webkit-appearance: textfield; /* 1 */
-    outline-offset: -2px; /* 2 */
+	-webkit-appearance: textfield; /* 1 */
+	outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -479,7 +478,7 @@ textarea {
    */
 [type='search']::-webkit-search-cancel-button,
 [type='search']::-webkit-search-decoration {
-    -webkit-appearance: none;
+	-webkit-appearance: none;
 }
 
 /**
@@ -488,8 +487,8 @@ textarea {
    */
 
 ::-webkit-file-upload-button {
-    -webkit-appearance: button; /* 1 */
-    font: inherit; /* 2 */
+	-webkit-appearance: button; /* 1 */
+	font: inherit; /* 2 */
 }
 
 /* Interactive
@@ -500,11 +499,11 @@ textarea {
    */
 
 output {
-    display: inline-block;
+	display: inline-block;
 }
 
 details {
-    display: block;
+	display: block;
 }
 
 /*
@@ -512,7 +511,7 @@ details {
    */
 
 summary {
-    display: list-item;
+	display: list-item;
 }
 
 /* Misc
@@ -523,7 +522,7 @@ summary {
    */
 
 template {
-    display: none;
+	display: none;
 }
 
 /**
@@ -531,5 +530,5 @@ template {
    */
 
 [hidden] {
-    display: none;
+	display: none;
 }
